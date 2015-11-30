@@ -21,14 +21,14 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'flex-start',
     alignItems: 'stretch',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F5FEFD',
   },
   message: {
     marginTop: 15
   },
   text: {
-    fontSize: 9,
-    lineHeight: 16,
+    fontSize: 12,
+    lineHeight: 18,
     textAlign: 'center'
   }
 });
@@ -38,7 +38,7 @@ export default class Puzzle extends React.Component {
     super(props);
 
     this.state = {
-      message: 'Loading game…',
+      message: 'Loading a SUPER game…',
       init: true,
       game: undefined
     };
