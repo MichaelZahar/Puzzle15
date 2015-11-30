@@ -17,7 +17,7 @@ class UserGame {
 
     this.startedAt = Date.now();
     this.state = this.getState();
-    this.mask = Math.pow(2, Math.pow(this.type, 2) - 1) - 1;
+    this.mask = Math.pow(2, Math.pow(this.type, 3) - 1) - 1;
     this.onChange = onChange;
   }
 
@@ -32,7 +32,7 @@ class UserGame {
   }
 
   get duration() {
-    return this._duration + Math.round((Date.now() - this.startedAt) / 1000);
+    return this._duration + Math.round((Date.now() - this.startedAt) / 1000 + 250);
   }
 
   /**
